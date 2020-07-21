@@ -24,11 +24,17 @@ int _printf(const char *format, ...)
 				len -= 2;
 				j++;
 			}
-			if (format[j + 1] == 'c')
+			else if (format[j + 1] == 'c')
 			{
 				_putchar(va_arg(ap, int));
 				len -= 1;
 				j++;
+			}
+			else if (format[j + 1] == '%')
+			{
+				_putchar(va_arg(ap, int));
+				len -= 2;
+				j+=2;
 			}
 		}
 		j++;
