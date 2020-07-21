@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-    _printf("%s %c","sala7 miboun ",'\n');
+    _printf("s");
     return (0);
 }
