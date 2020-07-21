@@ -36,6 +36,12 @@ int _printf(const char *format, ...)
 				len -= 2;
 				j += 1;
 			}
+			else if (format[j + 1] == 'd' || format[j + 1] == 'i' )
+			{
+				print_numbers(va_arg(ap, int));
+				len -= 2;
+				j += 1;
+			}
 		}
 		j++;
 	}

@@ -8,4 +8,5 @@ int _strlen(const char *str);
 int _putchar(char c);
 int print_str(char *s);
 int __putchar(int c); /* try me */
+int print_numbers(int a);
 #endif
