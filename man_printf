@@ -12,7 +12,7 @@ _printf - Write string, character, numbers, and convert numbers ( not yet )
 #include <stdio.h>
 .br
 .br
-int _printf(const char *format, ...)
+Prototype : int _printf(const char *format, ...)
 
 .SH DESCRIPTION
 The function _printf() prints to the std output the messages, and the variables in the input
