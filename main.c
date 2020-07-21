@@ -9,6 +9,7 @@
  */
 int main(void)
 {
-    _printf("s");
+    int i =_printf("na3mbouk ya %c%c %s", 's','i',"hammadi");
+    printf("%i",i);
     return (0);
 }
