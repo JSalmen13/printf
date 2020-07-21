@@ -7,4 +7,5 @@ int _printf(const char *format, ...);
 int _strlen(const char *str);
 int _putchar(char c);
 int print_str(char *s);
+int __putchar(int c); /* try me */
 #endif
