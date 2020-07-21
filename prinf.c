@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 			{
 				_putchar(va_arg(ap, int));
 				len -= 2;
-				j+=2;
+				j += 2;
 			}
 		}
 		j++;
