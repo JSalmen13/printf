@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	unsigned int j = 0, len = 0;
+	unsigned int j = 0, len = _strlen(format);
 	va_list ap;
 
 	va_start(ap, 0);
@@ -40,9 +40,10 @@ int _printf(const char *format, ...)
 				len -= 2;
 				j += 1;
 			}
+			else
+				_putchar(format[j]);
 		}
 		j++;
 	}
-	len += _strlen(format);
 	return (len);
 }
