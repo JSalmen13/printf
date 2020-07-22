@@ -22,6 +22,8 @@ int _printf(const char *format, ...)
 				s = va_arg(ap, char *);
 				if (s)
 					len += print_str(s);
+				else
+					len += print_str("(nil)");
 				len -= 2;
 				j++;
 			}
