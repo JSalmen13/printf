@@ -8,6 +8,7 @@ int _printf(const char *format, ...)
 {
 	unsigned int j = 0, len = _strlen(format);
 	va_list ap;
+	char *s;
 
 	va_start(ap, 0);
 	while (format[j])
@@ -18,7 +19,9 @@ int _printf(const char *format, ...)
 		{
 			if (format[j + 1] == 's')
 			{
-				len += print_str(va_arg(ap, char *));
+				s = va_arg(ap, char *);
+				if (s)
+					len += print_str(s);
 				len -= 2;
 				j++;
 			}
