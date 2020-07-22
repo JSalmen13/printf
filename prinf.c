@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 				if (s)
 					len += print_str(s);
 				else
-					len += print_str("(nil)");
+					len += print_str("(null)");
 				len -= 2;
 				j++;
 			}
