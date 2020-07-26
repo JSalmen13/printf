@@ -6,13 +6,14 @@
 */
 int print_numbers(int a)
 {
-	int i = 0;
+	int i = 0, k = 0;
 	char s[100];
 
 	while ((a / 10) != 0)
 	{
 		s[i] = (a % 10 + '0');
 		i++;
+		k++;
 		a = a / 10;
 	}
 	s[i] = (a + '0');
@@ -22,5 +23,5 @@ int print_numbers(int a)
 		_putchar(s[i - 1]);
 		i--;
 	}
-	return (i);
+	return (k);
 }

@@ -47,6 +47,7 @@ int _printf(const char *format, ...)
 				{
 					print_numbers(va_arg(ap, int));
 					len -= 2;
+					len += 4;
 					j += 1;
 				}
 				else
