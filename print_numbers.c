@@ -12,13 +12,14 @@ int print_numbers(int a)
 	while ((a / 10) != 0)
 	{
 		s[i] = (a % 10 + '0');
+		i++;
 		a = a / 10;
 	}
 	s[i] = (a + '0');
 	i++;
-	while (i >= 0)
+	while (i > 0)
 	{
-		_putchar(s[i]);
+		_putchar(s[i - 1]);
 		i--;
 	}
 	return (i);
